@@ -1,0 +1,44 @@
+public class Main {
+
+	public static void main(String[] args) {
+		Student student = new Student();
+		student.id = 1;
+		student.firstName="Fatih";
+		student.lastName="Kurt";
+		student.email="servetes5959@gmail.com";
+		student.nationalIdentity="12345678910";
+		student.userNumber="123";
+
+		Instructor instructor = new Instructor();
+		instructor.id=1;
+		instructor.firstName="Engin";
+		instructor.lastName="Demiroğ";
+		instructor.userNumber="456";
+		instructor.userName="İbraim";
+
+		User[] users = new User[]{student,instructor};
+
+		UserManager userManager = new UserManager();
+		userManager.addMultiple(users);
+
+
+
+		StudentManager studentManager = new StudentManager();
+		studentManager.add(student);
+
+		InstructorManager instructorManager = new InstructorManager();
+		instructorManager.add(instructor);
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}
