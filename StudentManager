@@ -1,0 +1,15 @@
+public class StudentManager {
+	public void add(Student student) {
+		
+		System.out.println(student.firstName+" eklendi");
+		System.out.println(student.nationalIdentity+" eklendi");
+		
+	}
+	public void delete(Student student) {
+		System.out.println(student.nationalIdentity+" silindi");
+	}
+	public void update(Student student) {
+		System.out.println(student.nationalIdentity+" güncellendi");
+	}
+
+}
